@@ -1,0 +1,36 @@
+#%RAML 1.0
+title: myyy
+/books:
+  get:
+    queryParameters:
+      title:
+        type: string
+        description: books by title
+        required: true
+        example: Lords of war
+          
+      bookid:
+        type: integer
+        description: books by id
+        required: false
+        example: 123
+    headers:
+      Content-Type:
+        displayName: content-type
+        description: json data
+        type: string
+      session:
+        description: connection session
+        required: true
+
+          
+  /{bookid}:  
+/buyrs:
+  post:
+    
+/orders:
+  post:
+    
+/book category:
+  get:
+    
